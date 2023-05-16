@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper{
+            width: 500px;
+            height: 500px;
+            background: pink;
+            margin: auto;
+        }
+        #header{
+            width: 100%;
+            height: 100px;
+            background: black;
+            text-align: center;
+            padding-top: 30px;
+        }
+        #content{
+            width: 100%;
+            height: 400px;
+            background: beige;
+        }
+        button{
+            width: 60px;
+            height:60px;
+            
+        }
+    </style>
+    <script>
+        let content;
+            function red(){
+                content.style.background="red";
+            }
+            function orange(){
+                content.style.background="orange";
+            }
+            function yellow(){
+                content.style.background="yellow";
+            }
+            function green(){
+                content.style.background="green";
+            }
+            function blue(){
+                content.style.background="blue";
+            }
+            function navy(){
+                content.style.background="navy";
+            }
+            function purple(){
+                content.style.background="purple";
+            }
+       window.addEventListener("load", function(){
+            content=document.getElementById("content");
+            let bt1=document.getElementById("bt1");
+            bt1.style.background="red";
+            let bt2=document.getElementById("bt2");
+            bt2.style.background="orange";
+            let bt3=document.getElementById("bt3");
+            bt3.style.background="yellow";
+            let bt4=document.getElementById("bt4");
+            bt4.style.background="green";
+            let bt5=document.getElementById("bt5");
+            bt5.style.background="blue";
+            let bt6=document.getElementById("bt6");
+            bt6.style.background="navy";
+            let bt7=document.getElementById("bt7");
+            bt7.style.background="purple";
+
+            bt1.addEventListener("click", function(){
+                red();
+            });
+            bt2.addEventListener("click", function(){
+                orange();
+            });
+            bt3.addEventListener("click", function(){
+                yellow();
+            });
+            bt4.addEventListener("click", function(){
+                green();
+            });
+            bt5.addEventListener("click", function(){
+                blue();
+            });
+            bt6.addEventListener("click", function(){
+                navy();
+            });
+            bt7.addEventListener("click", function(){
+                purple();
+            });
+        });
+        
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <button id="bt1">빨</button>
+            <button id="bt2">주</button>
+            <button id="bt3">노</button>
+            <button id="bt4">초</button>
+            <button id="bt5">파</button>
+            <button id="bt6">남</button>
+            <button id="bt7">보</button>
+        </div>
+        <div id="content"></div>
+    </div>
+</body>
+</html>
